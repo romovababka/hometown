@@ -13,6 +13,7 @@
             <li><a href="history/history.html">History</a></li>
             <li><a href="#">to do</a></li>
         </ul>
+        <img src="photos/icons8-menu-rounded-50.png" class="menu-btn">
     </nav>
     <header>
         <div class="main-content">
@@ -20,5 +21,19 @@
             <h2>Mother of Rus</h2>
         </div>
     </header>
+    <section>
+        <div class="interesting-facts">
+            <h1>Interesting facts</h1>
+            <div class="line"></div>
+        </div>
+    </section>
+<script>
+    const navLink = document.querySelector(".nav-links")
+    const menuButton = document.querySelector(".menu-btn");
+
+    menuButton.addEventListener("click", ()=>{
+        navLink.classList.toggle("mobile-menu")
+    })
+</script>
 </body>
 </html>
