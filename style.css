@@ -8,35 +8,15 @@ html {
     /*overflow: hidden;*/
 
 }
-/*ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+
+iframe{
+    filter: invert(100%);
+    width: 80%;
+    height: 300px;
+    justify-content: center;
+    margin: 10px 100px;
 }
 
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}*/
-/*li{
-    float: right;
-}
-li a {
-    display: block;
-}*/
 a{
     text-decoration: none;
 }
@@ -50,7 +30,8 @@ ul{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 100%);
+    margin: auto;
 }
 
 .nav-links {
@@ -58,7 +39,8 @@ ul{
     align-items: center;
 }
 .nav-links li {
-    margin: 0 30px;
+    margin: 8px 30px 0px 30px;
+
 }
 
 header {
@@ -74,7 +56,7 @@ header {
 
 .main-content {
     margin-top: 10px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 100%);
     text-align: center;
 }
 .main-content h2{
@@ -83,7 +65,7 @@ header {
 
 .main-content h1{
     font-size: 7vmin;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -91,14 +73,13 @@ header {
 ul li{
     font-size: 24px;
 }
-ul li:hover{
-    color: crimson;
-}
+
 .navbar h1{
-    color: lightskyblue;
+    color: rgba(135, 206, 250, 100%);
+    font-size: 24px;
 }
 .nav-links li a {
-    color: lightskyblue;
+    color: rgba(135, 206, 250, 100%);
 }
 
 
@@ -114,7 +95,7 @@ section {
 .line {
     width: 150px;
     height: 5px;
-    background: purple;
+    background: rgba(128, 0, 128, 100%);
     margin: 10px auto;
     border-radius: 5px;
 }
@@ -127,13 +108,34 @@ section {
     display: none;
 }
 
+.text-about-city {
+    padding: 30px 40px;
+    background-color: rgba(0, 0, 0, 100%);
+    color: rgba(139, 0, 0, 100%);
+}
+
+.facts-and-map{
+    margin-top: 40px;
+}
+.text-about-city-mobile{
+    display: none;
+}
+.map-mobile{
+    display: none;
+}
+
+
+
+
 /* mobile */
 @media only screen and (max-width: 850px){
     .menu-btn{
         display: block;
+        right: 0px;
     }
     .navbar {
         padding: 0;
+        background: none;
     }
     .home-link{
         position: absolute;
@@ -150,6 +152,7 @@ section {
     }
     .nav-links li {
         margin: 30px auto;
+        background-color: rgba(255, 255, 0, 100%);
     }
     html {
         overflow: scroll;
@@ -158,6 +161,30 @@ section {
     .mobile-menu{
         margin-top: 0px;
     }
+    .facts-and-map{
+        display: none;
+    }
+
+    .text-about-city-mobile{
+        margin-top: 20px;
+        background-color: rgba(139, 0, 0, 100%);
+        color: rgba(0, 0, 0, 100%);
+        padding: 10px;
+        border: 4px black dashed;
+        border-radius: 5%;
+    }
+    .map-mobile{
+        margin-top: 20px;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe{
+        margin: auto 10px;
+    }
+
 }
 
 
