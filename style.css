@@ -2,6 +2,9 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+body{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
 * {
     margin: 0;
     padding: 0;
@@ -209,7 +212,7 @@ section {
     footer{
         position: absolute;
         font-size: 28px;
-        padding-top: 50px;
+        padding-top: 150px;
     }
 
 }
