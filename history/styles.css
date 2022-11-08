@@ -35,7 +35,11 @@ li a:hover {
     padding: 0;
 }
 
-
+.title-history{
+    color: #a08bd5;
+    font-size: 24px;
+    font-family: inherit;
+}
 
 /* On smaller screens, decrease text size */
 /*@media only screen and (max-width: 300px) {
