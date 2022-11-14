@@ -1,4 +1,5 @@
 # hometown
+https://hometown-kyiv-sofiia.netlify.app/
 1st semester assignment, web development course, hometown, KYIV
 Name: Sofiia
 student ID: 52212804
